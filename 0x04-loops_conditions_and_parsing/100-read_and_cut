@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# dispay the content of a file /etc/passwd
+#+ only dsplay the:
+#+ username
+#+ group id
+#+ shell full path for the user
+
+while IFS= read -r LINE; do
+	echo "$LINE" | cut -d':' -f1,4,7
+done < /etc/passwd 
