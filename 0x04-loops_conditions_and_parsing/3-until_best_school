@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#This script displaying "Best school 10 times
+
+index=1
+
+until (( "$index" > 10 ))
+do
+	echo "Best School"
+	(( index++ ))
+done

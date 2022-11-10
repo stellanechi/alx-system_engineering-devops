@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#This script list files in the crrent directory
+
+for file in *
+do
+	echo "${file/*-/}"
+done

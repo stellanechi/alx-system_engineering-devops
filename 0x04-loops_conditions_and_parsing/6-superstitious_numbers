@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#This is a bash script using case statement instead of if, elif and else statement
+
+index=1
+while [ "$index" -le 20 ]
+do
+	echo "$index"
+
+	case "$index" in
+		4)
+			echo "bad luck from China";;
+		9)
+			echo "bad luck from Japan";;
+		17)
+			echo "bad luck from Italy";;
+		*)
+		esac
+	(( index++ ))
+done
