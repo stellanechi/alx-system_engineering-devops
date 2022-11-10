@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#This script dispay the visitor ip adress and http status code sorted
+
+awk '{print $1,$9}' apche-access.log | sort | uniq -c | sort -rn
