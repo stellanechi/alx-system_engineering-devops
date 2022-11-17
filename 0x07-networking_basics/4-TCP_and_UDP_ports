@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#bash script that display listening port
+#+ show only listening port
+#+ Display only the pid and name of the program
+
+netstat -lp
